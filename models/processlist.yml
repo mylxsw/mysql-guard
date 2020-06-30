@@ -1,0 +1,25 @@
+
+package: "models"
+
+models:
+  - name: processlist
+    definition:
+      without_create_time: true
+      without_update_time: true
+      fields:
+        - name: id
+          type: int64
+        - name: user
+          type: string
+        - name: host
+          type: string
+        - name: db
+          type: string
+        - name: command
+          type: string
+        - name: time
+          type: int64
+        - name: state
+          type: string
+        - name: info
+          type: string
