@@ -22,7 +22,7 @@ func ParseInnoDBDeadlocks(innodbStatusText string) map[string][]Deadlock {
 func parseDeadlocks(data string) []Deadlock {
 	deadlocks := make([]Deadlock, 0)
 
-	sectionContent := findDeadlockSection(string(data))
+	sectionContent := findDeadlockSection(data)
 	compile := regexp.MustCompile(`(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) ([A-Za-z0-9]{12})`)
 
 	segsByDate := compile.Split(sectionContent, -1)

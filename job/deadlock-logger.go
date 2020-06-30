@@ -39,7 +39,7 @@ func deadlockLogger(eloquentDB eloquent.Database, localDB *ledis.DB) error {
 			continue
 		}
 
-		log.WithFields(log.Fields{
+		logger.WithFields(log.Fields{
 			"deadlocks": locks,
 		}).Info("found deadlocks")
 

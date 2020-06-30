@@ -1,3 +1,4 @@
+
 =====================================
 2020-06-30 18:35:51 7f8b93a43700 INNODB MONITOR OUTPUT
 =====================================
@@ -88,19 +89,19 @@ TRANSACTION 8994556698, ACTIVE 0 sec inserting
 mysql tables in use 1, locked 1
 LOCK WAIT 6 lock struct(s), heap size 1184, 4 row lock(s), undo log entries 3
 MySQL thread id 1992682659, OS thread handle 0x7f8b42d1b700, query id 51674832164 10.168.100.74 warehouse update
-insert into `warehouse_material_slot_ref` (`slot_id`, `warehouse_material_ref_id`, `updated_at`, `created_at`) values (3268, 51452, '2020-06-30 17:29:53', '2020-06-30 17:29:53')
+insert into `xxxxxx_slot_ref` (`slot_id`, `xxxxxx_ref_id`, `updated_at`, `created_at`) values (3268, 51452, '2020-06-30 17:29:53', '2020-06-30 17:29:53')
 *** (1) WAITING FOR THIS LOCK TO BE GRANTED:
-RECORD LOCKS space id 1763 page no 145 n bits 704 index `idx_warehouse_material_ref_id` of table `warehouse`.`warehouse_material_slot_ref` trx table locks 2 total table locks 2  trx id 8994556698 lock_mode X insert intention waiting lock hold time 0 wait time before grant 0
+RECORD LOCKS space id 1763 page no 145 n bits 704 index `idx_xxxxxx_ref_id` of table `warehouse`.`xxxxxx_slot_ref` trx table locks 2 total table locks 2  trx id 8994556698 lock_mode X insert intention waiting lock hold time 0 wait time before grant 0
 *** (2) TRANSACTION:
 TRANSACTION 8994556705, ACTIVE 0 sec inserting, thread declared inside InnoDB 5000
 mysql tables in use 1, locked 1
 5 lock struct(s), heap size 1184, 3 row lock(s), undo log entries 3
 MySQL thread id 1992351625, OS thread handle 0x7f8b936cb700, query id 51674832179 10.168.100.74 warehouse update
-insert into `warehouse_material_slot_ref` (`slot_id`, `warehouse_material_ref_id`, `updated_at`, `created_at`) values (3268, 51454, '2020-06-30 17:29:53', '2020-06-30 17:29:53')
+insert into `xxxxxx_slot_ref` (`slot_id`, `xxxxxx_ref_id`, `updated_at`, `created_at`) values (3268, 51454, '2020-06-30 17:29:53', '2020-06-30 17:29:53')
 *** (2) HOLDS THE LOCK(S):
-RECORD LOCKS space id 1763 page no 145 n bits 704 index `idx_warehouse_material_ref_id` of table `warehouse`.`warehouse_material_slot_ref` trx table locks 2 total table locks 2  trx id 8994556705 lock_mode X lock hold time 0 wait time before grant 0
+RECORD LOCKS space id 1763 page no 145 n bits 704 index `idx_xxxxxx_ref_id` of table `warehouse`.`xxxxxx_slot_ref` trx table locks 2 total table locks 2  trx id 8994556705 lock_mode X lock hold time 0 wait time before grant 0
 *** (2) WAITING FOR THIS LOCK TO BE GRANTED:
-RECORD LOCKS space id 1763 page no 145 n bits 704 index `idx_warehouse_material_ref_id` of table `warehouse`.`warehouse_material_slot_ref` trx table locks 2 total table locks 2  trx id 8994556705 lock_mode X insert intention waiting lock hold time 0 wait time before grant 0
+RECORD LOCKS space id 1763 page no 145 n bits 704 index `idx_xxxxxx_ref_id` of table `warehouse`.`xxxxxx_slot_ref` trx table locks 2 total table locks 2  trx id 8994556705 lock_mode X insert intention waiting lock hold time 0 wait time before grant 0
 *** WE ROLL BACK TRANSACTION (2)
 ------------
 TRANSACTIONS
