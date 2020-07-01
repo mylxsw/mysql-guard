@@ -8,6 +8,7 @@ import (
 	"context"
 	"gopkg.in/guregu/null.v3"
 	"github.com/mylxsw/eloquent/query"
+	"github.com/mylxsw/coll"
 	"github.com/iancoleman/strcase"
 )
 
@@ -31,6 +32,12 @@ type Processlist struct {
 	Time int64 
 	State string 
 	Info string 
+}
+
+// As convert object to other type
+// dst must be a pointer to struct
+func (inst *Processlist) As(dst interface{}) error {
+	return coll.CopyProperties(inst, dst)
 }
 
 // SetModel set model for Processlist
@@ -309,8 +316,8 @@ func (m *ProcesslistModel) WithLocalScopes(names ...string) *ProcesslistModel {
 	return mc
 }
 
-// Query add query builder to model
-func (m *ProcesslistModel) Query(builder query.SQLBuilder) *ProcesslistModel {
+// Condition add query builder to model
+func (m *ProcesslistModel) Condition(builder query.SQLBuilder) *ProcesslistModel {
 	mm := m.clone()
 	mm.query = mm.query.Merge(builder)
 
@@ -561,13 +568,13 @@ func (m *ProcesslistModel) UpdateFields(kv query.KV, builders ...query.SQLBuilde
 }
 
 // Update update a model for given query
-func (m *ProcesslistModel) Update(processlist Processlist) (int64, error) {
-	return m.UpdateFields(processlist.StaledKV())
+func (m *ProcesslistModel) Update(processlist Processlist, builders ...query.SQLBuilder) (int64, error) {
+	return m.UpdateFields(processlist.StaledKV(), builders...)
 }
 
 // UpdateById update a model by id
 func (m *ProcesslistModel) UpdateById(id int64, processlist Processlist) (int64, error) {
-	return m.Query(query.Builder().Where("id", "=", id)).Update(processlist)
+	return m.Condition(query.Builder().Where("id", "=", id)).Update(processlist)
 }
 
 
@@ -588,7 +595,7 @@ func (m *ProcesslistModel) Delete(builders ...query.SQLBuilder) (int64, error) {
 
 // DeleteById remove a model by id
 func (m *ProcesslistModel) DeleteById(id int64) (int64, error) {
-	return m.Query(query.Builder().Where("id", "=", id)).Delete()
+	return m.Condition(query.Builder().Where("id", "=", id)).Delete()
 }
 
 

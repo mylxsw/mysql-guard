@@ -18,10 +18,10 @@ func (s *ServiceProvider) Register(app container.Container) {
 func (s *ServiceProvider) Boot(app glacier.Glacier) {
 	app.Cron(func(cr cron.Manager, cc container.Container) error {
 		if s.conf.Killer {
-			cc.Must(cr.Add("Process Killer", "@every 5s", processKiller))
+			cc.Must(cr.Add("Process Killer", "@every 3s", processKiller))
 		}
 		if s.conf.DeadlockLogger {
-			cc.Must(cr.Add("Deadlock Logger", "@every 5s", deadlockLogger))
+			cc.Must(cr.Add("Deadlock Logger", "@every 3s", deadlockLogger))
 		}
 		return nil
 	})
