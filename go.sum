@@ -147,6 +147,8 @@ github.com/mylxsw/glacier v0.0.0-20200605063614-87616319a1dc h1:bDqOLCMDRn+iKHpp
 github.com/mylxsw/glacier v0.0.0-20200605063614-87616319a1dc/go.mod h1:hSNQ73l+PUHHIMw4DwL5Z4bLCTlXSl98MdjyuPzWCfk=
 github.com/mylxsw/glacier v0.0.0-20200630085850-d78a788848d8 h1:WjPcgMnzS3hv/lExyNmncxOeh8sTxKXJQ9M3ODUzByM=
 github.com/mylxsw/glacier v0.0.0-20200630085850-d78a788848d8/go.mod h1:hSNQ73l+PUHHIMw4DwL5Z4bLCTlXSl98MdjyuPzWCfk=
+github.com/mylxsw/glacier v0.0.0-20200703065823-6e7b0331eceb h1:myPqS0R70jYSUOc4CTk4dSMlXPF1uMmd+RwHv87mY1U=
+github.com/mylxsw/glacier v0.0.0-20200703065823-6e7b0331eceb/go.mod h1:hSNQ73l+PUHHIMw4DwL5Z4bLCTlXSl98MdjyuPzWCfk=
 github.com/mylxsw/go-toolkit v0.0.0-20191208081907-50a06279f988 h1:eUlVMPyxeWUogeqwAkat6eE+3eY5fjP/UAXyhAf/7Jw=
 github.com/mylxsw/go-toolkit v0.0.0-20191208081907-50a06279f988/go.mod h1:aJAUawotu1IMtEPXInIm6qwiAEIMSGRAMH6otakYCWw=
 github.com/mylxsw/graceful v0.0.0-20200605063420-3c53968cf134 h1:uYT1HZC8kyKGtAR/Los/azrD8uROgkM8HHuhN2bzPmI=

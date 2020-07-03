@@ -12,7 +12,6 @@ type ServiceProvider struct {
 }
 
 func (s *ServiceProvider) Register(app container.Container) {
-	app.Must(app.AutoWire(s))
 }
 
 func (s *ServiceProvider) Boot(app glacier.Glacier) {

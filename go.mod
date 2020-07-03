@@ -12,7 +12,7 @@ require (
 	github.com/mylxsw/coll v0.0.0-20200612040853-4275264442f9
 	github.com/mylxsw/container v0.0.0-20200525090619-01208c02b074
 	github.com/mylxsw/eloquent v0.0.0-20200630015922-c17352d85ad6
-	github.com/mylxsw/glacier v0.0.0-20200630085850-d78a788848d8
+	github.com/mylxsw/glacier v0.0.0-20200703065823-6e7b0331eceb
 	github.com/urfave/cli v1.22.2
 	gopkg.in/guregu/null.v3 v3.4.0
 )
